@@ -13,25 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Daniel Stooß
+email: kontakt@danielstooss.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Motivated and dedicated professional known as a „Jack of all trades“ with over 7 years hands-on startup experience. Technologically sophisticated, with experience in multiple interdisciplinary fields. Able to manage and support all aspects of a startup life cycle.
+  Coaching mindset with proven capabilities in online course and workshop creation. Ready to utilize my skills and passion for you.
 twitter_username: username
-github_username: username
+github_username: creationist
 minimal_mistakes_skin: default
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+permalink: /
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+repository: creationist/website
+github: [metadata]
 
 include:
   - _pages
@@ -50,17 +49,15 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
   - jemoji
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Daniel Stooß"
+  avatar : "/assets/images/Daniel.jpeg"
+  bio    : >- # this means to ignore newlines until "baseurl:"
+    Wirtschaftsinformatik (M.Sc.), Introvert (INFJ), Scanner-Personality, Mentor & Coach, Curious Mind, World Traveler, Initiator.
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -88,17 +85,6 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -106,10 +92,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
